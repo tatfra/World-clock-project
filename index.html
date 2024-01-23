@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.44/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Tatiana Fraga</title>
   </head>
   <body>
@@ -11,33 +13,34 @@
       <h1>World Clock</h1>
       <select>
         <option value=""">Select a city..</option>
-        <option value="Portugal">Porto</option>
+        <option value="Lisbon">Lisbon</option>
+        <option value="Paris">Paris</option>
         <option value="New York">New York</option>
         <option value="Sidney">Sidney</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="Lisbon">
         <div>
-         <h2>Porto</h2>
-         <div class="date"> August 15, 2022 </div>
+         <h2>Lisbon</h2>
+         <div class="date"></div>
         </div>
-        <div class="time">22:35:00</div>
+        <div class="time"></div>
       </div>
     
-      <div class="city">
+      <div class="city" id="Paris">
         <div>
          <h2>Paris</h2>
-         <div class="date"> August 15, 2022 </div>
+         <div class="date"></div>
         </div>
-        <div class="time">22:35:00</div>
+        <div class="time"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="Sidney">
         <div>
          <h2>Sidney</h2>
-         <div class="date"> August 15, 2022 </div>
+         <div class="date"></div>
         </div>
-        <div class="time">22:35:00</div>
+        <div class="time"></div>
       </div>
     </div>
     <footer>

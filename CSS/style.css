@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  font-size:48px;
+  font-size: 48px;
   color: blue;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -32,6 +32,12 @@ select {
   justify-content: space-between;
   padding: 20px;
   border-bottom: 1px dashed gray;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 48px;
 }
 
 .city:last-child {
