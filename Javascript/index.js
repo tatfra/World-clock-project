@@ -1,15 +1,14 @@
 function updateTime() {
-  //Lisbon
-  let lisbonElement = document.querySelector("#Lisbon");
-  let lisbonDateElement = lisbonElement.querySelector(".date");
-  let lisbonTimeElement = lisbonElement.querySelector(".time");
+  //Puerto Rico
+  let ricoElement = document.querySelector("#Puerto-Rico");
+  let ricoDateElement = ricoElement.querySelector(".date");
+  let ricoTimeElement = ricoElement.querySelector(".time");
 
-  let lisbonTime = moment().tz("Europe/Lisbon");
+  let ricoTime = moment().tz("America/Puerto_Rico");
 
-  lisbonDateElement.innerHTML = lisbonTime.format("MMMM Do YYYY");
-  lisbonTimeElement.innerHTML = lisbonTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
+  ricoDateElement.innerHTML = ricoTime.format("MMMM Do YYYY");
+  ricoTimeElement.innerHTML = ricoTime.format("h:mm:ss [<small>]A[</small>]");
+
   //Paris
   let parisElement = document.querySelector("#Paris");
   let parisDateElement = parisElement.querySelector(".date");
@@ -35,6 +34,9 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
 
