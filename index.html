@@ -11,36 +11,39 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
-        <option value=""">Select a city..</option>
-        <option value="Lisbon">Lisbon</option>
-        <option value="Paris">Paris</option>
-        <option value="New York">New York</option>
-        <option value="Sidney">Sidney</option>
+
+      <select id="city">
+        <option value="">Select a city..</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Madrid">Madrid</option>
+        <option value="Atlantic/Reykjavik">Reykjavik</option>
+        <option value="Asia/Tokyo">Tokyo</option>
       </select>
 
-      <div class="city" id="Lisbon">
-        <div>
-         <h2>Lisbon</h2>
-         <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="Lisbon">
+          <div>
+            <h2>Lisbon</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-    
-      <div class="city" id="Paris">
-        <div>
-         <h2>Paris</h2>
-         <div class="date"></div>
-        </div>
-        <div class="time"></div>
-      </div>
 
-      <div class="city" id="Sidney">
-        <div>
-         <h2>Sidney</h2>
-         <div class="date"></div>
+        <div class="city" id="Paris">
+          <div>
+            <h2>Paris</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
+
+        <div class="city" id="Sidney">
+          <div>
+            <h2>Sidney</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
     <footer>
