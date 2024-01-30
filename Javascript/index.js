@@ -6,8 +6,8 @@ function updateTime() {
 
   let ricoTime = moment().tz("America/Puerto_Rico");
 
-  ricoDateElement.innerHTML = ricoTime.format("MMMM Do YYYY");
-  ricoTimeElement.innerHTML = ricoTime.format("h:mm:ss [<small>]A[</small>]");
+  ricoDateElement.innerHTML = ricoTime.format("MMMM Do, YYYY");
+  ricoTimeElement.innerHTML = ricoTime.format("hh:mm:ss [<small>]A[</small>]");
 
   //Paris
   let parisElement = document.querySelector("#Paris");
@@ -16,8 +16,10 @@ function updateTime() {
 
   let parisTime = moment().tz("Europe/Paris");
 
-  parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
-  parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
+  parisDateElement.innerHTML = parisTime.format("MMMM Do, YYYY");
+  parisTimeElement.innerHTML = parisTime.format(
+    "hh:mm:ss [<small>]A[</small>]"
+  );
 
   //Sidney
   let sidneyElement = document.querySelector("#Sidney");
@@ -26,9 +28,9 @@ function updateTime() {
 
   let sidneyTime = moment().tz("Australia/Sydney");
 
-  sidneyDateElement.innerHTML = sidneyTime.format("MMMM Do YYYY");
+  sidneyDateElement.innerHTML = sidneyTime.format("MMMM Do, YYYY");
   sidneyTimeElement.innerHTML = sidneyTime.format(
-    "h:mm:ss [<small>]A[</small>]"
+    "hh:mm:ss [<small>]A[</small>]"
   );
 }
 
@@ -48,9 +50,11 @@ function updateCity(event) {
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
-            "h:mm:ss"
+            "hh:mm:ss"
           )}<small>${cityTime.format("A")}</small></div>
         </div>
+        
+        <a href="index.html" id="back">&#8617 <em>Back</em></a>
 `;
 }
 
